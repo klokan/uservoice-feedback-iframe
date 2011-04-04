@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uservoice</title>
+<script src="closure-library/closure/goog/base.js"></script>
+<script src="deps.js"></script>
+<script type="text/javascript">
+goog.require('uservoice.main');
+</script>
+<style type="text/css" media="screen">
+    body, html { font-family: arial; }
+    ul { padding:0; margin:0;}
+	#uv_suggestion_list { margin:0.3em 0 0.3em 0 !important; }
+	#uv_suggestion_list li.uv_suggestion { position:relative; padding:0 0 0 46px; margin:0 0 1em 0; background-image:none; min-height:40px; _height:40px; list-style:none; }
+	#uv_suggestion_list li .uv_votes { position:absolute; left:0; border:1px solid #ccc; color:#333333; padding:2px 4px; text-align:center; font-size:9px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+	#uv_suggestion_list li .uv_votes .uv_num_votes { display:block; font-size:14px; line-height:14px; font-style:normal; font-weight:bold; padding:2px 0 0 0; }
+	/* Comment icon from: http://wefunction.com/2008/07/function-free-icon-set */
+	#uv_suggestion_list li .uv_comments { font-size:0.9em; color:#14a305; padding-left:18px; background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAMAAABcOc2zAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYBQTFRF3ejsrsXOtcfOtMvU3Ojt8vT03efq5u7x1ePp1uLn2uXpt8vT1uTq5e3w4Ovv+vv75O3xr8bQq8LK3ujsrsbQ2+Diu8/Y0t7i1uDkr8XOscTKr7zAqbrB4uvv2+Dhts3Vts3W4evv0NXX19ze+fr6wMvQ2eXqy9PV0djZ0tfZr77E4enuztbX1+LmuMfMr8XN2+Xo4uXn2t/hvdDXt8LG/v//4+vvydnfsMjQsMfP4+zv4Ort2+jt0eDlwdTctMrS7/Hy8fPzrMDH9PX209/k1d7hore/rLi9s8rT/P39ssnR7e/ww9fe2OPoy9rgz93ipLvDy9ba6ezs6+7vuMjOvMjNzdTXxMzPz9XW0Nnc1N/k2ebqu8fKyNLW/Pz81Nja/f394+fo1uLmxNff4OrvwdLZzdbaztXY0Njbu9DY4OTm0tve/v7++/v73ebq2ePn0t/jytnetcrTscjRsMbOqrrA4+zu8/X14ert3+jr2+jsp77H0eDm2d/hrcbP////NxIGyAAAAIB0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wA4BUtnAAAAv0lEQVR42mKoB4FgZZ10DUMVEJMBiL0zsvPz2Axc00RzwAJZgcJmvOzsvGXaEupxQAFWVQZha1kBAauKSraoMKBArbguF0MKnyIfA1eSbyg/Q31kYQGnWhULi000p4t/SDlDfWyJsbktBw8PR41fKrebM0O9kZCkvZidT7JdZpG+ZWkCQz2/tBejBbO8AnMxI6OTHMhaRxNuD5G6ujrBuoB4iMM8NWP0mJiktGSqlSACQOCQaBiUyxruHmEKEGAAicU1n1nKsAQAAAAASUVORK5CYII=) no-repeat 0px 0px; }
+/*	#uv_suggestion_list li .uv_comments:focus,
+	#uv_suggestion_list li .uv_comments:hover { color:#333333; text-decoration:underline; }
+*/
+</style>
+</head>
+
+<body>
+
+<h1>Community suggestions</h1>
+
+<div id="uv_forum">
+Enter a new idea or vote in our <a href="http://webglearth.uservoice.com/forums/93887-general">Feedback forum</a>
+</div>
+
+<ul id="uv_suggestion_list">
+</ul>
+
+<!--
+  <li class="uv_suggestion">
+	<div class="uv_votes"><div class="uv_num_votes">1243</div>votes</div>
+	<a href="http://link/" target="_blank">This is the title of a suggestion</a>
+	<a href="http://link/" class="uv_comments">5&nbsp;comments</a>
+  </li>
+-->
+
+<script type="text/javascript">main()</script>
+</body>
+</html>
