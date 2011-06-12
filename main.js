@@ -18,7 +18,8 @@ uservoice.main = function() {
   jsonp.send({},
       function(data) {
         // console.log(data['suggestions']);
-        goog.array.forEach(data['suggestions'],
+        var all = goog.array.slice(data['suggestions'], 0, 5);
+        goog.array.forEach( all,
             function(item) {
               // Create DOM structure to represent the note.
               var newSuggestion = goog.dom.createDom('li', {
