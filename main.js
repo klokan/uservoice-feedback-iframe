@@ -12,8 +12,8 @@ uservoice.main = function() {
 
   var parent = goog.dom.getElement('uv_suggestion_list');
 
-  var jsonp = new goog.net.Jsonp('http://webglearth.uservoice.com/' +
-      'api/v1/forums/93887/suggestions.json?client=ltazXkDrZ92eVcXGycKRag');
+  var jsonp = new goog.net.Jsonp('http://georeferencer.uservoice.com/' +
+      'api/v1/forums/41573/suggestions.json?client=1G82AJU6opl9DNtnBXPAwA');
 
   jsonp.send({},
       function(data) {
